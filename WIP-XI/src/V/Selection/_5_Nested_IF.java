@@ -1,0 +1,44 @@
+/*
+ * WIP XI Computer Programing 
+ */
+
+package V.Selection;
+
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util.println;
+
+/**
+ *
+ * @author sittiwatlcp
+ */
+public class _5_Nested_IF {
+    public static void main(String[] args) {
+        
+        boolean ตื่นสาย = true;
+        boolean มีเงินค่ารถ = false;
+        boolean เดินไปโรงเรียนทัน = false;
+        
+        if(ตื่นสาย){
+            System.out.println("ตื่นสาย!");
+            if(เดินไปโรงเรียนทัน){
+                System.out.println("เดินไปเรียน");
+                System.out.println("ถึงโรงเรียนทันเวลา");
+                System.out.println("--= จบ =--");
+            } else {
+                if(มีเงินค่ารถ){
+                    System.out.println("นั่งรถเรียน");
+                    System.out.println("ถึงโรงเรียนทันเวลา");
+                    System.out.println("--= จบ =--");
+                } else {
+                    System.out.println("เดินไปเรียน");
+                    System.out.println("ถึงโรงเรียนสาย");
+                    System.out.println("--= จบ =--");
+                }
+            }
+        } else {
+            System.out.println("เดินไปเรียน");
+            System.out.println("ถึงโรงเรียนทันเวลา");
+            System.out.println("--= จบ =--");
+        }
+        
+    }
+}
